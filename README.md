@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Issue & Feedback Tracker
 
-## Getting Started
+A full-stack Issue & Feedback Tracker application built using **Next.js (App Router)**, **Tailwind CSS**, and **MongoDB**.  
+The platform allows users to securely manage issues with full CRUD functionality and generate **AI-powered issue summaries**.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Features
+
+- User Authentication (Register / Login / Logout)
+- JWT-based protected routes
+- Create, Read, Update & Delete issues
+- AI-powered issue summary generation using OpenAI
+- Responsive and modern SaaS-style UI
+- MongoDB database integration
+- Global footer across all pages
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js 16, React, Tailwind CSS
+- **Backend:** Next.js API Routes
+- **Database:** MongoDB
+- **Authentication:** JWT
+- **AI Integration:** OpenAI API
+
+---
+
+## 📂 Project Structure
+
+src/
+├── app/
+│ ├── api/
+│ ├── login/
+│ ├── register/
+│ ├── dashboard/
+│ ├── layout.tsx
+│ └── page.tsx
+├── components/
+├── lib/
+├── models/
+└── middleware.ts
+
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env.local` file in the root directory and add:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+OPENAI_API_KEY=your_openai_api_key
+
+Getting Started
+
+Clone the repository
+
+git clone https://github.com/amansharma6664/issue-tracker-ai.git
+
+
+Install dependencies
+
+npm install
+
+
+Run the development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open in browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+🤖 AI Summary Feature
 
-To learn more about Next.js, take a look at the following resources:
+Users can paste an issue description and generate a concise, professional summary using OpenAI’s language model.
+If API quota is unavailable, the app handles it gracefully with fallback messaging.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👤 Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Aman Kumar Sharma
+GitHub: https://github.com/amansharma6664
+LinkedIn: https://www.linkedin.com/in/aman-kumar-sharma-876250212/
